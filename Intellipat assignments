@@ -1,0 +1,7 @@
+list1.append(y%2==0 for y in list)
+>>> list1
+[False, True, False, True, False, True, False, True, False, <generator object <genexpr> at 0x000001CE64979A10>]
+
+ list1 = [ y for y in list if y%2==0]
+>>> list1
+[2, 4, 6, 8]
