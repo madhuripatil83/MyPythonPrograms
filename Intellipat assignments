@@ -33,6 +33,42 @@ print(a[:2 ,:2])
 [[1 2]
  [4 5]]
  
+ 
+ 3x3 matrix using numpy
+ 
+ import numpy as np
+a= np.arange(2,11).reshape(3,3)
+print (a)
+
+[[ 2  3  4]
+ [ 5  6  7]
+ [ 8  9 10]]
+ 
+ convert datatype of array
+ 
+ import numpy as np
+b = np.array([[1,2,3,4]])
+print(b)
+b = b.astype(np.float32)
+print(b)
+ 
+ create a list and apply append and reverse fucntion to it
+ 
+ mylist = [10,20,20,'apple',True,8.10]
+mylist.append(30)
+mylist.append(40)
+print(mylist)
+mylist.reverse()
+print(mylist)
+revlist = mylist.copy()
+print(revlist)
+
+output:
+[10, 20, 20, 'apple', True, 8.1, 30, 40]
+[40, 30, 8.1, True, 'apple', 20, 20, 10]
+[40, 30, 8.1, True, 'apple', 20, 20, 10]
+
+
  extract bottom right
  
  a = np.array([[1,2,3],[4,5,6],[7,8,9]])
@@ -40,3 +76,27 @@ print(a[:2 ,:2])
 print(a[1: ,1:])
 [[5 6]
  [8 9]]
+
+#dictionary code snippets
+
+mydict = {1:'data',2:'information',3:'text'}
+print(mydict)
+
+output
+{1: 'data', 2: 'information', 3: 'text'}
+
+mydict.pop(3)
+print(mydict)
+
+output
+{1: 'data', 2: 'information'}
+
+mydict[3] = 'features'
+print(mydict)
+
+output
+{1: 'data', 2: 'information', 3: 'features'}
+
+print(mydict[1])
+output
+data
