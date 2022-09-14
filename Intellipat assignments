@@ -100,3 +100,25 @@ output
 print(mydict[1])
 output
 data
+
+
+#append array
+
+import numpy as np
+a = np.array([[10,20,30]])
+np.append(a, [[40,50,60]] , axis = 0)
+print(a)
+
+#OUTPUT
+[[10,20,30]
+ [40,50,60]]
+ 
+ #add 2 arrays
+ 
+ import numpy as np
+ a=np.array([[10,20,30]])
+ b=np.array([[40,50,60]])
+ sumarr=np.add(a,b)
+ print(sumarr)
+ 
+ output [[50 70 90]]
