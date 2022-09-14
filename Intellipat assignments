@@ -122,3 +122,21 @@ print(a)
  print(sumarr)
  
  output [[50 70 90]]
+
+
+#in 3x3 array print first row and last element
+
+import numpy as np
+newarr = np.arange(10,100,10)
+newarr = newarr.reshape(3,3)
+print(newarr)
+print(newarr[0:1])
+print(newarr[2: ,2:])
+
+#output
+
+[[10 20 30]
+ [40 50 60]
+ [70 80 90]]
+[[10 20 30]]
+[[90]]
